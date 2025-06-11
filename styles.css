@@ -150,3 +150,8 @@ color:var(--orange);}
 #contact .social-medias{
     text-decoration:none;
     color:var (--green);}
+
+  #about .me img{
+    width:300px;
+    height:400px;
+  }
