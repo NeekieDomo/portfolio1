@@ -155,3 +155,7 @@ color:var(--orange);}
     width:200px;
     height:300px;
   }
+
+  #reflection{
+    background-color:var(--red);
+  }
