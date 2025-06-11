@@ -1,0 +1,152 @@
+:root {
+  --blue: #002642;
+  --orange: #e59500;
+  --red: #840032;
+  --gray:#7a9e9f;
+  --green:#00c49a;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+h1 {
+  font-size: 70px;
+  margin-top: 40vh;
+}
+h2{font-size: 50px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: sans-serif;
+}
+
+#navbar {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: var(--blue);
+  padding: 30px;
+  font-size: 25px;
+  border-bottom: 1px solid var(--orange);
+}
+
+.nav-links {
+  display: flex;
+  font-family: Arial, sans-serif;
+}
+
+.nav-links a {
+  color: var(--orange);
+  padding: 0 40px;
+}
+
+.nav-links a:hover {
+  text-decoration: overline;
+}
+
+section {
+  min-height: 100vh;
+  padding: 100px;
+}
+
+#about-section {
+  background-color: var(--red);
+  display: flex;
+  flex-direction: column;
+}
+
+#about-section p {
+  color: var(--orange);
+  font-style:italic;
+}
+
+#projects {
+  background-color: var(--gray);
+}
+
+#projects .project-tile{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 20px;
+  place-items: center;
+  max-width: 1200px;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--red);
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+#projects .project-tile img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#projects h2 {
+  color: var(--orange);
+  border-bottom: 5px solid var(--blue);
+  width: fit-content;
+  margin: auto;
+}
+
+#projects .project-tile p{
+    font-size: 25px;
+    padding: 10px;
+    color:white;
+}
+
+.show-all{
+    text-decoration:none;
+    font-size:30px;
+    width:max-content;
+    display:flex;
+    align-items:center;
+    margin:auto;
+    padding:0px 15px;
+    background-color: var(--orange);
+    border-radius:5px;
+    cursor:pointer;
+    transition:background-color 0.2 ease-in;
+}
+
+.show-all:hover{
+    background-color: var(--red);
+}
+
+.show-all:active{
+    background-color:var(--blue);
+}
+
+#contact{
+background-color:var(--green);
+color:var(--orange);}
+
+#contact h1{
+    margin-top: 300px;
+    font-style:italic;
+}
+
+#contact .social-medias{
+    display:flex;
+    flex-wrap:flex;
+    max-width:1000px;
+    justify-content:space-around;
+    margin:auto;
+    margin-top:40px;
+}
+
+#contact .social-medias{
+    text-decoration:none;
+    color:var (--green);}
