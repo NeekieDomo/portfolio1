@@ -158,4 +158,9 @@ color:var(--orange);}
 
   #reflection{
     background-color:var(--red);
+  
+  }
+
+  #reflection p{
+    color:#00c49a;
   }
